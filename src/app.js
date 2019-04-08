@@ -36,6 +36,7 @@ res.render('transfer',{message:'Transfer Completed'});
 });
 
 
+
 app.get('/payment',(req,res)=> res.render('payment',{account:accounts.credit}));
 app.post('/payment', (req,res)=> {
     accounts.credit.balance -=req.body.amount;
