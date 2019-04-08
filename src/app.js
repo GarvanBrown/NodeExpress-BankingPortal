@@ -27,3 +27,4 @@ app.get('/profile',(req,res)=> {res.render('profile',{user:users[0]});
 app.get('/credit',(req,res)=> {res.render('account',{account:accounts.credit});
 });
 app.listen(3000,()=> console.log("Project running on port 3000"));
+
